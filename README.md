@@ -2,7 +2,7 @@
 
 It is a test using python, Docker, Flask and SWAGGER.
 
-# 1) Python 
+#  Python 
 
 # The Topic: 
 There is a collection of input strings and a collection of query strings. For each query string, determine how many times it occurs in the list of input strings. 
