@@ -4,22 +4,22 @@ It is a test using python, Docker, Flask and SWAGGER.
 
 # 1) Python 
 
-The Topic: 
+# The Topic: 
 There is a collection of input strings and a collection of query strings. For each query string, determine how many times it occurs in the list of input strings. 
 Return an array of the results.
 
-Example
+# Example
 
 Strings= ['ab', 'ab' , 'abc']
 querries = ['ab', 'abc' , 'bc']
 resultat = [2,1,0]
 
-The suggestion: 
+# The suggestion: 
 cleanning up the code a bit and put it in a class which will be in a separate python module (another file) and making a "main" which uses this class. Indeed, we will have:
 SparseArray.py  as a class that contains the function to calculate the occurence
 main.py as the main where we will use this function
 
-The solution:
+# The solution:
 SparseArray.py 
 Class that contains: Simple constructor
 The function matchingStrings function: count the occurence of querries on strings using counter 
@@ -31,10 +31,10 @@ querries are taken from the command  that we will launch to execute the main
 The count the queries
 the use of the function matchingStrings denined on the class SparseArray on SparseArray.py 
 
-Execution of main.py
+# Execution of main.py
 When we Launch python -m main ab,abc,bc we have the result that we want to have 
 
-Docker:
+# Docker:
 
 In order to run our program on Docker is an open platform for developing  and running applications. 
 Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. 
@@ -49,7 +49,7 @@ d) Docker run -- name test main.py ab abc bc ( It's the same CMD that we had lau
 
 If we use all these steps we will have the result on Docker.
 
-Flask: 
+# Flask: 
 
 Flask is a web micro framework that allow you to build a web application.
 We retun on our main.py and we add the instructions that activate Flask on our program:
