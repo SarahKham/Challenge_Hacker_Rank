@@ -46,8 +46,9 @@ So we must
 * gedit Dockerfile : Creation of a Docker file, in this file we must write all the requirements that we had used:
 Python 3.7
 Entrypoint ( here we must put python and the script that we want to run which is main.py )
-* Docker build -t 
-* Docker run -- name test main.py ab abc bc ( It's the same CMD that we had launched to run our main.py but on Docker :) ) 
+* docker build -t testh . : this cmd is used to build the python image 
+IF the build is succesful we run: 
+* docker run --name sarahkh testha main.py ab abc bc ( It's the same CMD that we had launched to run our main.py but on Docker :) ) 
 
 If we use all these steps we will have the result on Docker.
 
@@ -56,6 +57,9 @@ If we use all these steps we will have the result on Docker.
 Flask is a web micro framework that allow you to build a web application.
 We retun on our main.py and we add the instructions that activate Flask on our program:
 we instantiate Flask using app = Flask(__name__), we created a new route - / which renders an index.html file from the templates folder.
+* RESULT:  Running on http://0.0.0.0:5000/  we can visualize the result  using post on postman.
+
+
 
 
 
