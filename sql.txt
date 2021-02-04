@@ -1,0 +1,14 @@
+# Premiere partie
+select sum ( prod_qty * prod_price) as ventes 
+from TRANSACTIONS
+group by date
+having date in ('01/01/2019', '31/12/2019')
+
+# Deuxieme partie
+select client_id,
+sum( case when Product_Type= 'MEUBLE' then 1 ELSE 0 END) as Vente_Meuble,
+sum( case when Product_Type= 'DECO' then 1 ELSE 0 END) as Vente_DECO,
+from TRANSACTIONS, NOMENCLATURE
+where TRANSACTIONS.prod_id= NOMENCLATURE.product_id
+and date in ('01/01/2019', '31/12/2019')
+group by client_id
