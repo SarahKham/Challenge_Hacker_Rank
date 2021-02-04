@@ -1,6 +1,6 @@
 # Challenge_Hacker_Rank
 
-It is a test using python, Docker, Flask and SWAGGER.
+It is a test using python, Docker, Flask.
 
 #  Python 
 
