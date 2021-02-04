@@ -20,16 +20,18 @@ SparseArray.py  as a class that contains the function to calculate the occurence
 main.py as the main where we will use this function
 
 # The solution:
-SparseArray.py 
+* SparseArray.py 
 Class that contains: Simple constructor
 The function matchingStrings function: count the occurence of querries on strings using counter 
 This function take in parameters strings that will be taken from the textfile.
 The function must return an array of integers representing the frequency of occurrence of each query string in strings.
-main.py 
+* main.py 
 it contains the INPUT_PATH that is the  environment variable as a text file
 querries are taken from the command  that we will launch to execute the main
 The count the queries
-the use of the function matchingStrings denined on the class SparseArray on SparseArray.py 
+the use of the function matchingStrings denined on the class SparseArray on SparseArray.py
+* requirements.txt : it contains all the package that we need to install on Docker to run easaly our program
+
 
 # Execution of main.py
 When we Launch python -m main ab,abc,bc we have the result that we want to have 
@@ -39,13 +41,13 @@ When we Launch python -m main ab,abc,bc we have the result that we want to have
 In order to run our program on Docker is an open platform for developing  and running applications. 
 Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. 
 So we must 
-a) install Docker 
-b) Creation of a Docker file, in this file we must write all the requirements that we had used:
+
+* install Docker  
+* gedit Dockerfile : Creation of a Docker file, in this file we must write all the requirements that we had used:
 Python 3.7
-requirements.txt ( it contains all the package that we need to install on Docker to run easaly our program
 Entrypoint ( here we must put python and the script that we want to run which is main.py )
-c) Docker build -t 
-d) Docker run -- name test main.py ab abc bc ( It's the same CMD that we had launched to run our main.py but on Docker :) ) 
+* Docker build -t 
+* Docker run -- name test main.py ab abc bc ( It's the same CMD that we had launched to run our main.py but on Docker :) ) 
 
 If we use all these steps we will have the result on Docker.
 
